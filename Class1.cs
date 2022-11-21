@@ -20,14 +20,14 @@ class Count_
     public event Count_one Co_ev;
 
 
-    public void circle(MyEnum v1)
+    public void circle()
     {
 
         for (MyEnum i = MyEnum.January; i <= MyEnum.December; i++)
         {
             if ((int) i % 3 ==0)
             {
-                Co_ev(co);
+                Co_ev((MyEnum)i);
             }
         }
     }
