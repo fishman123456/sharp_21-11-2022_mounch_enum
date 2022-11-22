@@ -17,7 +17,7 @@ class Count_
 {
     public delegate void Count_one(MyEnum co);
 
-    public event Count_one Co_ev;
+    public event Count_one? Co_ev;
 
 
     public void circle()
@@ -25,6 +25,8 @@ class Count_
 
         for (MyEnum i = MyEnum.January; i <= MyEnum.December; i++)
         {
+           // string s = i.ToString();
+            //Console.WriteLine(s);
             if ((int) i % 3 ==0)
             {
                 Co_ev((MyEnum)i);
